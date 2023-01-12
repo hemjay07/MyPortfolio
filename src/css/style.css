@@ -5,11 +5,12 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #ffcd42;
+  --primary-color: rgb(255, 205, 66);
   --secondary-color: #ffd35c;
   --bg-primary: #ffffff;
   --text-color: #222222;
@@ -35,9 +36,9 @@
   --primary-color: #ffcd42;
   --secondary-color: #ffd35c;
   --bg-primary: #000000;
-  --text-color: #ffffff;
+  --text-color: rgb(119, 119, 119);
   --text-color-two: #222222;
-  --bg-secondary: #ffffff;
+  --bg-secondary: #777777;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
@@ -80,6 +81,7 @@ body {
   right: 0;
   z-index: 20;
   background: var(--bg-primary);
+  /* border: 2px blue solid; */
 }
 
 .navbar .container {
@@ -89,6 +91,7 @@ body {
   z-index: 20;
   height: 80px;
   width: 100%;
+  /* border: 2px red solid; */
 }
 
 .navbar .nav-menu {
@@ -103,10 +106,10 @@ body {
   font-weight: var(--weight-semibold);
 }
 
-.navbar #logo img {
+/* .navbar #logo img {
   display: block;
   width: 40px;
-}
+} */
 
 .navbar .btn {
   margin-right: 1.5rem;
@@ -162,6 +165,27 @@ body {
   background-color: var(--card-background);
   margin: 5.5rem 0;
 }
+.blob {
+  position: absolute;
+  /* width: 15%; */
+  /* height: 550px; */
+  z-index: -1;
+  /* top: 10%; */
+  /* left: 40%; */
+}
+.description {
+  margin-bottom: 100px;
+  font-size: 1.3rem;
+  width: 65%;
+}
+.connect-with-me {
+  margin-top: 100px;
+  /* border: solid 5px red; */
+}
+.seemore {
+  margin: auto;
+  margin-top: 30px;
+}
 /* Projects */
 #projects {
   display: flex;
@@ -202,7 +226,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  top: 160px;
+  top: 20px;
   left: 10px;
 }
 
@@ -322,6 +346,14 @@ body {
 }
 
 @media (max-width: 600px) {
+  .blob {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    top: 10%;
+    left: 40%;
+  }
   .project {
     display: grid;
     grid-template-columns: 1fr;
@@ -330,5 +362,10 @@ body {
   .header-container .btn {
     border-radius: 5px;
     width: 80%;
+  }
+  .description {
+    margin-bottom: 100px;
+    font-size: 1.3rem;
+    width: 100%;
   }
 }

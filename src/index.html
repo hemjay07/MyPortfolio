@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
-    <title>Mujeeb's Portfolio V1</title>
-    <meta name="title" content="Mujeeb's Portfolio V1" />
+    <title>Mujeeb</title>
+    <meta name="title" content="Mujeeb's Portfolio" />
     <meta
       name="description"
       content="This is Mujeeb's portfolio, a succinct representation of his ability and work done so far as a full stack developer."
@@ -84,19 +84,23 @@
       <nav class="navbar">
         <div class="container">
           <!-- Logo -->
-          <h1 id="logo">
-            <a href="https://github.com/CommunityPro/portfolio-html"
+          <p id="logo">
+            Opabode
+            <br />Abdulmujeeb
+            <!-- <a href="https://github.com/CommunityPro/portfolio-html"
               ><img src="./assets/logo.png" alt="Your Logo"
-            /></a>
-          </h1>
+            /></a> -->
+          </p>
           <!-- Navbar links -->
           <ul class="nav-menu">
+            <li><a class="nav-link" href="#">ABOUT</a></li>
+
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#">CONTACT</a></li>
-            <li><a class="nav-link" href="#">BlOG</a></li>
-            <li>
+            <li><a class="nav-link" href="#footer">CONTACT</a></li>
+            <!-- <li><a class="nav-link" href="#">BlOG</a></li> -->
+            <li class="button_yellow_on_hover">
               <a
-                class="nav-link btn btn-primary"
+                class="nav-link btn btn-secondary"
                 href="https://github.com/CommunityPro/portfolio-html"
                 >RESUME <i class="fas fa-arrow-right"></i
               ></a>
@@ -120,29 +124,62 @@
         </div>
       </nav>
 
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=400&q=60"
-          alt=""
-        />
-        <h1>Hi I'm Franklin</h1>
+      <section id="about" class="header-container">
+        <svg
+          class="blob"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 500 500"
+          width="50%"
+          id="blobSvg"
+          filter="blur(0px)"
+          style="opacity: 0.4"
+          transform="rotate(-42)"
+        >
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(119, 119, 119)"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 205, 66)"></stop>
+            </linearGradient>
+          </defs>
+          <path id="blob" fill="url(#gradient)" style="opacity: 1">
+            <animate
+              attributeName="d"
+              dur="3.2s"
+              repeatCount="indefinite"
+              values="M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M418.08664,320.33435Q390.6687,390.6687,320.33435,427.91946Q250,465.17023,188.27506,419.31005Q126.55013,373.44987,106.38448,311.72494Q86.21883,250,84.09726,165.98785Q81.9757,81.9757,165.98785,53.98938Q250,26.00305,311.1687,76.83282Q372.3374,127.6626,408.92099,188.8313Q445.50458,250,418.08664,320.33435Z;M446.86448,329.36764Q408.73529,408.73529,329.36764,419.76576Q250,430.79624,166.60504,423.79308Q83.21008,416.78992,69.36975,333.39496Q55.52942,250,96.13341,193.3687Q136.7374,136.7374,193.3687,119.10083Q250,101.46426,313.50105,112.23108Q377.00211,122.99789,430.99789,186.49895Q484.99368,250,446.86448,329.36764Z;M423.42552,332.41134Q414.82268,414.82268,332.41134,424.30554Q250,433.78841,170.96572,420.92848Q91.93144,408.06856,46.07152,329.03428Q0.21159,250,66.88003,191.77423Q133.54846,133.54846,191.77423,102.82861Q250,72.10876,305.00592,106.04846Q360.01185,139.98815,396.0201,194.99408Q432.02836,250,423.42552,332.41134Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z"
+            ></animate>
+          </path>
+          <path id="blob" fill="url(#gradient)" style="opacity: 1">
+            <animate
+              attributeName="d"
+              dur="3.2s"
+              repeatCount="indefinite"
+              values="M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M446.86448,329.36764Q408.73529,408.73529,329.36764,419.76576Q250,430.79624,166.60504,423.79308Q83.21008,416.78992,69.36975,333.39496Q55.52942,250,96.13341,193.3687Q136.7374,136.7374,193.3687,119.10083Q250,101.46426,313.50105,112.23108Q377.00211,122.99789,430.99789,186.49895Q484.99368,250,446.86448,329.36764Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M418.08664,320.33435Q390.6687,390.6687,320.33435,427.91946Q250,465.17023,188.27506,419.31005Q126.55013,373.44987,106.38448,311.72494Q86.21883,250,84.09726,165.98785Q81.9757,81.9757,165.98785,53.98938Q250,26.00305,311.1687,76.83282Q372.3374,127.6626,408.92099,188.8313Q445.50458,250,418.08664,320.33435Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z"
+            ></animate>
+          </path>
+        </svg>
+        <h1>Hi I'm Mujeeb</h1>
 
         <div class="content-text">
-          <h2>Building digital</h2>
-          <h2>products, brands, and experience.</h2>
+          <h2>Full stack developer</h2>
 
-          <p>
-            A Frontend Developer and Visual Designer with experience in web
-            design, brand identity and product design.
-          </p>
+          <p></p>
         </div>
-        <a
-          href="https://github.com/CommunityPro/portfolio-html"
-          class="btn btn-secondary"
-          target="_blank"
-          >Connect With Me</a
-        >
+        <p class="description">
+          I am a Junior Full Stack Developer based in Ibadan, Nigeria . I excel
+          in both front-end and back-end development, and I have a blast
+          handling any aspect of the development process. I am a collaborative
+          team player with a strong analytical mindset and a technical
+          proficiency.
+        </p>
+        <!-- <li><a class="nav-link" href="#projects">PROJECTS</a></li> -->
+
+        <li class="button_yellow_on_hover" style="list-style-type: none">
+          <a href="#footer" class="btn btn-secondary connect-with-me"
+            >Connect With Me</a
+          >
+        </li>
       </section>
     </header>
 
@@ -150,8 +187,7 @@
     <section id="projects" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Works</h2>
-        <p>Check out some of my personal and paid projects</p>
+        <h2>Projects</h2>
       </div>
 
       <article class="project">
@@ -159,13 +195,27 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project One</h3>
-              <p>React, Redux, SASS</p>
+              <h3>STAR FINDER</h3>
+              <p>
+                Starfinder web app alerts you of VIP visitors, such as Elon
+                Musk, via social media and API integration. Built by team,
+                individual contributions includes password recovery, about us
+                pages and grammatical review. Finalist in program with 11,000
+                participants.
+              </p>
+              <br />
+              <p>React, CSS</p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a
+                href="https://github.com/hemjay07?from=2022-12-01&to=2022-12-31&org=workshopapps&year_list=1"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://starfinder.dev/" target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -174,13 +224,27 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Two</h3>
-              <p>React, Redux, SASS</p>
+              <h3>Fyuur</h3>
+              <p>
+                A web app that connects local performing artists and venues. The
+                app has a robust data model that powers the API endpoints, and
+                it utilizes a PostgreSQL database for storing, querying, and
+                creating information about the artists and venues.
+              </p>
+              <br />
+              <p>
+                SQLAlchemy ORM, PostgreSQL, Flask, Flask-Migrate, HTML, CSS,
+                Javascript,Bootstrap 3
+              </p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a href="https://github.com/hemjay07/Fyyur" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <!-- <a href="" target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a> -->
             </div>
           </div>
         </div>
@@ -189,14 +253,26 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Three</h3>
-              <p>React, Redux, SASS</p>
+              <h3>QIZZICALS</h3>
+              <p>
+                Building this trivia put my react skills to test. I challenged
+                myself to complete it in 2 days. Struggled to implement some
+                logic such as restarting the game and getting the color of the
+                options to change to show the correct answers (the color
+                property was in a component 2 levels deep). I got to appreciate
+                the power of React and it propmted my current journey to be an
+                expert in React Development.
+              </p>
+              <br />
+              <p>React, Styled-component, RESTful API</p>
             </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
+            <a href="https://github.com/hemjay07/Quizzical" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://quizzical-react.netlify.app/" target="_blank"
+              ><i class="fas fa-globe"></i
+            ></a>
+            <div class="project-link"></div>
           </div>
         </div>
 
@@ -204,13 +280,30 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Four</h3>
-              <p>React, Redux, SASS</p>
+              <h3>TinDog</h3>
+              <p>
+                TinDog is a playful web application that connects dogs. I
+                developed this app under the guidance of Angela Yu, which was an
+                enriching experience. I was thrilled to use CSS techniques such
+                as Z-index, position absolute and transform for the first time,
+                adding dynamic and interactive touch to the app.It showcases my
+                web development skills and my aptitude to learn and grow.
+              </p>
+              <br />
+              <p>CSS, Html, Javascript, Bootstrap</p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a
+                href="https://github.com/hemjay07/TinDog-Start-Here"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://hemjay07.github.io/TinDog-Start-Here/"
+                target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -219,57 +312,73 @@
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Five</h3>
-              <p>React, Redux, SASS</p>
+              <h3>Metabnb clone</h3>
+              <p>
+                A Web app built using react. This is my stage 3 project for the
+                HNG internship. This is a website that provide you access to
+                luxury and affordable houses in the metaverse, get a chance to
+                turn your imagination to reality
+              </p>
+              <br />
+              <p>React, CSS</p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <a
+                href="https://github.com/hemjay07/metabnb_react_clone"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://metabnb-clone-hng3.netlify.app/" target="_blank"
+                ><i class="fas fa-globe"></i
+              ></a>
             </div>
           </div>
         </div>
 
         <!-- Project 6 -->
         <div href="" class="card">
-          <div class="project-info">
+          <div class="project-info six">
             <div class="project-bio">
-              <h3>Project Six</h3>
-              <p>React, Redux, SASS</p>
+              <h3>Portfolio Version 2</h3>
+              <br />
+              <br /><br />
+              <p style="font-size: large">Coming soon !!!</p>
+              <!-- <p>React, Redux, SASS</p> -->
             </div>
 
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
+            <!-- <div class="project-link">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+          </div> -->
           </div>
         </div>
       </article>
-
-      <a href="#" class="btn btn-secondary" target="_blank"
-        >See More <i class="fas fa-arrow-right"></i
-      ></a>
+      <div class="button_yellow_on_hover seemore">
+        <a
+          href="https://github.com/hemjay07?tab=repositories"
+          class="btn btn-secondary"
+          target="_blank"
+          >See More <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
     </section>
 
     <footer id="footer">
       <div class="container">
-        <a href="mailto:communitypro47@gmail.com">communitypro47@gmail.com</a>
+        <a href="mailto:mujeebopabode07@gmail.com">mujeebopabode07@gmail.com</a>
         <!-- Social links -->
         <div class="social">
-          <a href="#" target="_blank"
-            ><img src="./assets/facebook-icon.svg" alt="Facebook"
-          /></a>
-          <a href="#" target="_blank"
+          <a href="https://twitter.com/mujeeb_dimeji" target="_blank"
             ><img src="./assets/twitter-icon.svg" alt="Twitter"
           /></a>
-          <a href="#" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/abdulmujeeb-opabode/?profileId=ACoAAChXscgBDOY_jbx7HvsUfrLBAauxa2o5FDk"
+            target="_blank"
             ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
           /></a>
-          <a href="#" target="_blank"
+          <a href="https://github.com/hemjay07" target="_blank"
             ><img src="./assets/github-icon.svg" alt="GitHub"
-          /></a>
-          <a href="#" target="_blank"
-            ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
           /></a>
         </div>
         <!-- Attribution -->
@@ -286,10 +395,10 @@
             />
           </a>
         </div>
-        <p>
+        <!-- <p>
           Copyright &copy; Communitypro <span id="datee"></span>, All rights
           reserved
-        </p>
+        </p> -->
       </div>
     </footer>
     <script src="js/script.js"></script>
