@@ -373,4 +373,8 @@ body {
     font-size: 1.3rem;
     width: 100%;
   }
+  .tools {
+    font-size: 0.7rem !important;
+    padding-top: 0;
+  }
 }
