@@ -207,6 +207,7 @@ body {
 
 .card .project-bio p {
   font-size: 0.83rem;
+  /* margin-bottom: 50px; */
 }
 
 .card .project-bio h3 {
@@ -228,6 +229,10 @@ body {
   position: relative;
   top: 20px;
   left: 10px;
+}
+.tools {
+  font-size: 1rem !important;
+  padding-top: 0.5rem;
 }
 
 /* Footer */
